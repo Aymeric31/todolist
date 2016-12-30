@@ -1,0 +1,32 @@
+
+  #todolist {
+    width: 280px;
+    margin: 10px solid;
+    margin: 10px 10px;
+  }
+  #todolist li {
+    border-radius: 10px;
+    list-style: none;
+    background: white;
+    border: 2px solid black;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  #todolist li:nth-child(2n){
+    background: #ccc;
+  }
+  #todolist li:hover:after,
+  #todolist li.done:after {
+    content: '✔';
+    color: green;
+    position: absolute;
+    right: 5px;    
+  }
+  #todolist li.done:hover:after {
+    content: 'x';
+    font-weight: bold;
+    color: red;
+    position: absolute;
+    right: 5px;    
+  }
